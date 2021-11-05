@@ -54,3 +54,8 @@ https://support.juniper.net
 https://https://learningportal.juniper.net
 
 https://www.eve-ng.net/index.php/documentation/
+
+//// LAB IMAGE \\\\
+
+![image](https://user-images.githubusercontent.com/40407552/140561994-156b3bb4-d6ed-457b-986f-395d2a2225af.png)
+
