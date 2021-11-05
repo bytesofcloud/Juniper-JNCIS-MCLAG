@@ -50,5 +50,7 @@ Lab Requirements/Objectives:
 //// VENDOR GUIDES \\\\
 
 https://support.juniper.net
+
 https://https://learningportal.juniper.net
+
 https://www.eve-ng.net/index.php/documentation/
