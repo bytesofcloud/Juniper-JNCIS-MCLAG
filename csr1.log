@@ -1,0 +1,44 @@
+﻿!
+! JUNOS vMX CONFIGURATION
+! CSR1/VMX1
+! USER: admin / abc123  :: root / abc123
+!
+! VERSION 1: STUDY FOR JNCIS EXAM, MCLAG/VRRP
+!
+set system login user admin uid 1775
+set system login user admin class super-user
+set system login user admin authentication encrypted-password "$6$W9vPpWNz$IpR/z3Gt7EHT6M0E6C0O/T9.4ouluGg/MMPkqoD1FLhT29cNdnx..Mw9ehp9GakzKUwQLYZn4inFiUqEEkZi./"
+set system root-authentication encrypted-password "$6$i5LgcMoh$WmmLEbPNkI0I9UXbowigstG6AQB9PiShWzbc5c7ala2WQk5o88jGn3OVUc/FiF6x0SxycGqVi1BdggH2SVCvb1"
+set system services ssh root-login allow
+set system services ssh protocol-version v2
+set system host-name CSR1
+set system management-instanceD
+set system syslog user * any emergency
+set system syslog file messages any notice
+set system syslog file messages authorization info
+set system syslog file interactive-commands interactive-commands any
+set system processes dhcp-service traceoptions file dhcp_logfile
+set system processes dhcp-service traceoptions file size 10m
+set system processes dhcp-service traceoptions level all
+set system processes dhcp-service traceoptions flag packet
+set chassis aggregated-devices ethernet device-count 4
+set interfaces ge-0/0/0 description CSR2
+set interfaces ge-0/0/0 gigether-options 802.3ad ae101
+set interfaces ge-0/0/1 description CSR3
+set interfaces ge-0/0/1 gigether-options 802.3ad ae101
+set interfaces ge-0/0/9 description VPC9
+set interfaces ge-0/0/9 unit 0 family bridge interface-mode access
+set interfaces ge-0/0/9 unit 0 family bridge vlan-id 100
+set interfaces ae101 description MCLAG
+set interfaces ae101 aggregated-ether-options lacp active
+set interfaces ae101 aggregated-ether-options lacp periodic fast
+set interfaces ae101 unit 0 family bridge interface-mode trunk
+set interfaces ae101 unit 0 family bridge vlan-id-list 100-105
+set interfaces fxp0 unit 0 family inet address 192.168.21.101/24
+set interfaces lo0 unit 0 family inet address 10.255.255.101/32
+set routing-instances mgmt_junos routing-options static route 0.0.0.0/0 next-hop 192.168.21.1
+set protocols lldp interface all
+set bridge-domains vlan-100 description "SERVER 1"
+set bridge-domains vlan-100 vlan-id 100
+set bridge-domains vlan-101 description "SERVER 2"
+set bridge-domains vlan-101 vlan-id 101
