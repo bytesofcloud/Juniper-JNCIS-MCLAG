@@ -53,7 +53,13 @@ Lab Requirements/Objectives:
 	> Create layer-3 redundancy for LAN connectivity
 	> Verify configuration status of MCLAG and NHRP configurations
 	> Test status by disabling interfaces
-	
+
+Lab Details:
+> Management interfaces:
+	> CSR1/VCP1: 192.168.21.101
+	> CSR2/VCP2: 192.168.21.102
+	> CSR3/VCP3: 192.168.21.103
+	> CSR4/VCP4: 192.168.21.104
 
 //// VENDOR GUIDES \\\\
 
