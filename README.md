@@ -9,18 +9,26 @@ Model:: vMX
 OS Version:: Junos: 19.1R3.9
 
 Virtualization Platform::
-	> Application: EVE-NG COMMUNITY
-	> Version: 2.0.3-112, QEMU 2.4.0
-		System:    	Host: 		EVE-NG Kernel: 4.20.17-eve-ng-ukms+ x86_64 (64 bit) Console: tty 2 Distro: Ubuntu 16.04 xenial
-					Machine:   	System: LENOVO product: 30B5005XUS v: ThinkStation P510 serial: MJ05Q450
-					Mobo: 		LENOVO model: 102F Bios: LENOVO v: S00KT40A date: 05/04/2017
-					CPU:       	Hexa core Intel Xeon E5-1650 v4 (-HT-MCP-) speed/max: 1809/4000 MHz
-					Graphics:  	Card: NVIDIA GP106GL [Quadro P2000]
-								Display Server: N/A driver: N/A tty size: 160x46 Advanced Data: N/A for root out of X
-					Network:   	Card: Intel Ethernet Connection (2) I218-LM driver: e1000e
-					Drives:    	HDD Total Size: 1024.2GB (4.4% used)
-					Info:      	Processes: 270 Uptime: 4 days Memory: 7941.4/32058.8MB Init: systemd runlevel: 5
-								Client: Shell (bash) inxi: 2.2.35 
+> Application: EVE-NG COMMUNITY
+> Version: 2.0.3-112, QEMU 2.4.0
+
+System:    	
+Host: 		EVE-NG Kernel: 4.20.17-eve-ng-ukms+ x86_64 (64 bit) Console: tty 2 Distro: Ubuntu 16.04 xenial
+
+Machine:
+
+System: 	LENOVO product: 30B5005XUS v: ThinkStation P510
+
+Mobo: 		LENOVO model: 102F Bios: LENOVO v: S00KT40A date: 05/04/2017
+CPU:       	Hexa core Intel Xeon E5-1650 v4 (-HT-MCP-) speed/max: 1809/4000 MHz
+
+Graphics:  	Card: NVIDIA GP106GL [Quadro P2000], Display Server: N/A driver: N/A tty size: 160x46 Advanced Data: N/A for root out of X
+
+Network:   	Card: Intel Ethernet Connection (2) I218-LM driver: e1000e
+
+Drives:    	HDD Total Size: 1024.2GB
+
+
 								
 This lab is based on a bare metal install of the EVE-NG Community Edition. It may be run within VMWare Workstation and other hypervisors. Resource utilization, on above server specifications, for this lab/system:
 
