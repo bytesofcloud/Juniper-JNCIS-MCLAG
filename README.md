@@ -62,7 +62,12 @@ This lab focuses on basic layer-2 and layer-3 switching within a standard data c
 	<li>CSR3/VCP3: 192.168.21.103</li>
 	<li>CSR4/VCP4: 192.168.21.104</li>
 </ul>
-</blockquote>
+</blockquote><p>
+<b><i>Lab User Accounts (username / password)</b></i>
+  <ul>
+    <li>root / abc123</li>
+    <li>admin / abc123</li>
+  </ul><p>
 
 <b>//// VENDOR GUIDES \\\\</b><br>
 https://support.juniper.net<br>
