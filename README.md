@@ -71,7 +71,7 @@ This lab focuses on basic layer-2 and layer-3 switching within a standard data c
 
 <b>//// VENDOR GUIDES \\\\</b><br>
 https://support.juniper.net<br>
-https://https://learningportal.juniper.net<br>
+https://learningportal.juniper.net<br>
 https://www.eve-ng.net/index.php/documentation/<br>
 
 <b>//// LAB IMAGE \\\\</b>
